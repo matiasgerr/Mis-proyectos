@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: #101116;
+}
+
+header{
+    background-image: url(bg.jpg) ;
+    background-position: center center;/*pocisionando la imagen*/
+    background-repeat: no-repeat;/*que no se repita*/
+    background-size: cover; /*que cubra toda la pantalla*/
+}
+
+.container{
+    max-width: 1200px; /*esta linea hace que los contenedores queden a 1200px*/
+    margin: 0% auto; /*esto hace que los contenedores vayan a la esquina*/
+
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /*este hace que el menu siempre este por delante de los desmas items*/
+
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.menu .navbar ul{
+    list-style: none;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fdfdfd;
+    display: block;
+    text-transform: uppercase; /*el text transform hace que todos los enlases se conviertan en mayuscula*/
+}
+
+.menu .navbar a:hover{
+    color: red;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* a partir de esta linea todo afectara a la discripcion de el producto*/
+.header-content{
+    display: flex;
+    align-items: center;
+    padding: 300px 0 150px 0;
+
+}
+
+.header-text {
+    width: 40%;
+    padding-right: 25px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 70%;
+    width: 55px;
+    font-weight: 800; /*el grosor de el header text*/
+    color: #fdfdfd;
+    margin-bottom: 25px;
+}
+
+.header-text p {
+    font-size: 10px;
+    color: #fdfdfd;
+}
+
+.header-img{
+    width: 60%;
+}
+.hamburger{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.botones{
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background: linear-gradient(90deg,   #E70B25 0%, #900314 100% );
+    padding: 10px 33px;
+    margin-right: 20px;
+    color: #fdfdfd;
+    border-radius: 25px;
+}
+
+.btn-1:hover{
+    background: linear-gradient(90deg,   #f3031f 0%, #bc0217 100% );
+}
+
+.btn-2 {
+    display: inline-block;
+   border: 1px solid #FDFDFD;
+    padding: 10px 33px;
+    margin-right: 20px;
+    color: #fdfdfd;
+    border-radius: 25px;
+}
+.btn-2:hover{
+    border: 1px solid #FA0D29;
+}
+  
+
+.icon{
+    width: 20px;
+}
+
+.product-menu{
+    padding: 30px 0 150px 0;
+}
+
+.title{
+    color: #FDFDFD;
+    font-size: 43px;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+}
+
+.product{
+    display: flex;
+    position: relative;
+    
+}
+.hoja{
+    right: 0;
+    position: absolute;
+    bottom: -130px;
+    width: 150px;
+}
+
+.menu-nav{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.tab{
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px 35px;
+    border-radius: 25px;
+    color: #FDFDFD;
+    font-size: 10px;
+    font-weight: 800;/*en la mayoria de los casos el valor de font-weight es 800*/
+    background-color: #24252A;
+}
+
+.tab.active{
+    background: linear-gradient(90deg, #E70B25 0%, #900314 100%);
+    color: #FDFDFD;
+}
+
+.tab.active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.visible{
+    display: initial;
+}
+
+.box-vontainer-1
+.box-vontainer-2
+.box-vontainer-3{}
