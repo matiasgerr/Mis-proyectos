@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_0/src/pages/app.dart';
+import 'package:flutter_application_0/Pages/ContainPages.dart';
 
-void main() {
+void main(List<String> args) {
   runApp(const MyApp());
 }
 
-//entrada de toda la app
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'container',
+      home: ContainPages(),
+    );
+  }
+}
